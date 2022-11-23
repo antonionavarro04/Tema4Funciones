@@ -25,8 +25,8 @@ public class Ejercicio3 {
     } public static void main(String[] args) {
         // ? En el método main definimos la recogida de datos y la llamada a la función cilindro
         // ^ Definimos las variables radio, altura y opcion
-        double radio, altura;
-        byte opcion;
+        double radio, altura; // * Double porque el radio y la altura pueden ser decimales
+        byte opcion; // * Byte porque las opciones válidas van del 0 al 2
 
         // ^ Definimos la variable read como Scanner y cambiamos su formato a US
         Scanner read = new java.util.Scanner(System.in).useLocale(Locale.US);
