@@ -5,18 +5,12 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class Ejercicio2 {
-    static void between(long num1, long num2) { // ! Definimos la función between la cual tiene los parámetros num1 y num2
-        for (num1++; num1 < num2; num1++){ // * Creamos un bucle for que se repita desde el número siguiente al introducido hasta el número anterior al introducido
-            System.out.print(num1 + ", "); // * Imprimimos el número seguido de una coma y un espacio
-        }
-    }
-
     public static void main(String[] args) {
         // ^ Definimos las variables num1 y num2
         long num1, num2;
 
         // ^ Definimos la variable read como Scanner y cambiamos su formato a US
-        Scanner read = new java.util.Scanner(System.in).useLocale(Locale.US);
+        Scanner read = new Scanner(System.in).useLocale(Locale.US);
 
         // ! Presentamos al usuario el funcionamiento del programa
         System.out.println("Este programa imprime todos los números entre dos números introducidos por teclado.");
@@ -34,7 +28,7 @@ public class Ejercicio2 {
         System.out.println("\n-----------------------------------------\n");
 
         // ! Llamamos a la función between
-        between(num1, num2);
+        Methods.between(num1, num2);
 
         // € Hocho por Antonio Navarro
     }
